@@ -55,7 +55,7 @@ jobs:
           path: EnglishMaster.apk
 
       - name: Rilis di GitHub Releases (hanya saat tag v*)
-        if: startsWith(github.ref, 'refs/tag/v')
+        if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
           files: EnglishMaster.apk
